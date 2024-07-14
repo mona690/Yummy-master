@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Yummy</title>
+  </head>
+  <body class="bg-black">
+    <main>
+      <div class="fixed top-0 bottom-0 left-[-250px] z-20 hidden" id="sideBar">
+        <div
+          class="bg-black w-[250px] flex flex-col py-6 px-3 h-full text-white no-underline justify-between"
+          id="chooseBar"
+        >
+          <ul class="list-none links">
+            <li class="m-4">
+              <a href="#" class="relative top-20" id="search">Search</a>
+            </li>
+            <li class="m-4">
+              <a href="#" class="relative top-32" id="Categories">Categories</a>
+            </li>
+            <li class="m-4">
+              <a href="#" class="relative top-48" id="areas">Area</a>
+            </li>
+            <li class="m-4">
+              <a href="#" class="relative top-64" id="ingredients"
+                >Ingredients</a
+              >
+            </li>
+            <li class="m-4">
+              <a href="#" class="relative top-96" id="contactUs">Contact Us</a>
+            </li>
+          </ul>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white w-[70px] flex flex-col justify-between py-4 px-2 text-center h-full"
+        >
+          <img src="images/logo.png" alt="Yummy-logo" />
+          <div>
+            <i
+              id="menuButton"
+              class="fa-solid fa-bars text-black fa-2xl cursor-pointer"
+            ></i>
+            <i
+              id="closeMenu"
+              class="fa-solid fa-xmark text-black fa-2x hidden cursor-pointer"
+            ></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-globe text-black"></i>
+            <br />
+            <i class="fa-solid fa-share-nodes text-black"></i>
+          </div>
+        </div>
+      </div>
+
+      <section class="defaultItems m-5 position-relative overflow-hidden">
+        <div class="container mx-auto relative left-[40px] p-5">
+          <div class="mx-10 gap-5 hidden" id="inputs">
+            <input
+              type="text"
+              placeholder="Search By Name"
+              id="nameSearchInput"
+              class="m-4 w-full md:w-[40%] border-2 outline-blue-500 bg-black border-gray-300 text-slate-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 focus:shadow-md focus:shadow-blue-500"
+            />
+            <input
+              type="text"
+              placeholder="Search By First Letter"
+              id="firstLetterSearchInput"
+              class="m-4 w-full md:w-[40%] border-2 outline-blue-500 bg-black border-gray-300 text-slate-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 focus:shadow-md focus:shadow-blue-500"
+              maxlength="1"
+            />
+          </div>
+
+          <div class="myRow mx-auto xl:mx-10 gap-5" id="rowData">
+            <div
+              class="h-screen flex justify-center items-center overflow-hidden w-full"
+              id="spinner"
+            >
+              <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
